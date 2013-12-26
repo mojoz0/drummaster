@@ -1,0 +1,47 @@
+#clean-code
+
+CAMERA_INDEX = 0
+capture = cv.CaptureFromCAM(CAMERA_INDEX)
+
+
+def findPoints(frame, oldRectPoints):
+    imageSize = cv.GetSize(frame)
+    original = cv.CloneImage(frame)
+    hsv = cv.CreateImage(imageSize, 8, 1)
+    threshold = cv.CreateImage(imageSize, 8, 1)
+    
+    # Do things to the image to isolate the red parts
+    cv.CvtColor(hsv,hsv,cv.CV_RGB2HSV)
+    cv.InRange(hsv, (110, 70, 70), (140, 255, 255), threshold)
+    cv.Erode(threshold, threshold, iterations = 5)
+    cv.Dilate(threshold, threshold, iterations = 5)
+    
+
+    memory = cv.CreateMemStorage(0)
+    clone = cv.CloneImage(thresh)
+    contours = cv.FindContours(clone, memory,
+                                cv.CV_RETR_LIST,
+                                cv.CV_CHAIN_APPROX_SIMPLE, (0,0))
+    print contours
+    if not contours:
+        # If there's no red on the screen
+        rectPoints = (0, 0, 0, 0) #This shold be oldRectPoints
+    else:
+        rectPoints = cv.BoundingRect(contours)
+
+    left, top, width, height = rectPoints
+    right, bottom = left + width, top + height
+    return (left, top, width, height)
+    
+        
+
+
+i = 0
+
+while True:
+    frame = cv.QueryFrame(capture)
+    left, top, width, height = findPoints(frame, rectPoints)
+    cv.Rectangle(frame, (left, top), (right, bottom), 255, 9, 8, 0)
+    cv.ShowImage("Window", frame)
+    key = cv.WaitKey(7)
+    i += 1

@@ -1,0 +1,87 @@
+Time Sheet
+Thursday 11/15:	Spent 30 MINUTES getting a circle to move around the canvas with no delayFriday 11/16: 	Spent 2 HOURS trying to install OpenCV/ other software that I need for it. Kind of failed miserablySaturday 11/17:	Met with Tomer for 15 MINUTES and then spent 1 HOUR trying to install OpenCV/ Numpy and other stuff. At this point I’m starting to think that I might have to try another project.Sunday 11/18:	Worked for 1 HOUR making my time sheet, and starting my design documents
+
+Monday 11/19:
+
+	Worked for 1 HOUR trying to gain a deeper understanding of how modules and stuff work in hope that this will help me to install NumPy and OpenCV. (Again I still fail). At this point I'm getting pretty frustrated
+
+Tuesday 11/20:
+
+	Worked for a total of 2 HOURS (30 minutes of which were with Kosbie) trying to install NumPy and OpenCV. In the end, I succeeded to install setup tools, pip, and NumPy! I'm still having trouble getting OpenCV though.
+
+	Later, I worked for 1 HOUR trying to install OpenCV through Macports. I successfully installed Macports but that's it. I'm approaching the 10 hour mark and am about to give up.
+
+Wednesday 11/21:
+
+	Worked for a total of 3 HOURS. I reinstalled Macports, reinstalled python, reinstalled NumPy, and finally I installed OpenCV successfully!!!!!!!! After around 13 hours of work I finally got it. YAY!!!!!!
+
+	Later I spent around 30 minutes just looking at different tutorials online and fiddling with code.
+
+Thursday 11/22:
+
+	Nothing.
+
+Friday 11/23:
+
+	Spent about 1 HOUR looking at different tutorials and example codes and seeing how things work. A lot of these tutorials use arbitrary files so the code doesn't actually work if you just copy and paste it :( whatever I know what it means.
+
+Saturday 11/24:
+
+	No work done.
+
+Sunday 11/25:
+
+	Spent about 1 HOUR looking at tutorials and trying to write my own thing. Succeeded in making the webcam work so that it records and shows a video. Next is getting it to track stuff.
+
+Monday 11/26:
+
+	Worked for 1 HOUR writing design documents and trying to write more code.
+
+	Later I worked 2 HOURS looking at more tutorials and starting to right my own tracking code.
+
+Tuesday 11/27:
+
+	Worked for a total of 4 HOURS. I succeeded in getting it to track one red object and be able to register it's location (i.e. make a rectangle around the object). Wahoo!
+
+	Later I worked for another 1 HOUR trying to optimize the tracking.
+
+Wednesday 11/28:
+
+	Worked for 2 HOURS trying to get things to happen. Succeeded in printing something every time the cup goes below a certain line. Installed pygame for sound but didn't get it to work.
+
+Thursday 11/29:
+
+	After working for 2 HOURS, I can get pygame to play a sound when the cup is in a certain space. I'm finding it really hard to 1) put up with noise (i.e. other red objects in the room) and 2) I think I'm going to have to use two different colors for my drumsticks and have to do it against a white wall or something. Need to go to the art store to get supplies.
+
+	Later I worked for 5 HOURS working to clean up my code (by adding classes and such) and adding one or two new features (such as volume differentiating).
+
+Friday 11/30:
+
+	I worked for about 30 minutes trying to get the "synching" thing to work. I don't know if I'm going to pursue that much further. I think I'll spend my time doing more important things. 
+
+Saturday 12/1:
+
+	Worked for around 7 HOURS total. I managed to get a basic UI using pygame and to get more sounds. It's starting to look like an actual drum set!
+
+Sunday 12/2:
+
+	Worked for around 5 HOURS. I finally got blue working!! I tweaked the set a little bit. It still runs substantially slower than I would like it to. I think what I'm going to do from now until turn-in is:
+
+-Finalize UI
+-Try to make it actually work well at high speeds
+
+Fingers Crossed!
+
+Monday 12/3:
+
+	Worked for 4 hours trying to learn pygame/ how the UI works and trying to implement it. Also using photoshop, I created images that I'm going to use for the UI.
+
+Tuesday 12/4:
+
+	Worked for 5 hours pulling the project together and trying to optimize the video part.
+
+Wednesday 12/5:
+
+	Worked for 5 hours finalizing the project/wrapping it up/making the video etc.
+
+Total Hours logged on this thing: 54. Success

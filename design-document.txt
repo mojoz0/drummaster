@@ -1,0 +1,55 @@
+Design Doc / Planning out of Stuff
+
+11/21:
+
+Ideally, my application will show the user a picture of a drum set and the user will be able to "air drum" by just holding drumsticks and pretending to hit drums. The computer will make sounds to simulate a really drum set.
+
+So I'm gonna need video processing software that works with Python so that I can make a program that takes video input and is able to identify movements that the user is making. I'll use OpenCV for this. I'm also gonna need software that can make sounds. I don't really know what I'll use for that, but I'll figure that out later.
+
+11/26:
+
+As I near the deadline, I'm starting to think that I'm probably going to have a system where the drum sticks/ hands/ parts of the drum sticks are a specific color. That sort of simplifies the problem because that way I can get the web came to track that specified color. If I get that done and I have time left over, I'll move on to doing it without color.
+
+Also, in order to make OpenCV do what I want it to do, I think I'm gonna try and define a "hit" (that is, when the user hits a drum) as when the tip of the drumstick is in the area where the drum is. So I guess I'm gonna start out by making it so that the user MUST be a certain distance away from the camera. Maybe if I have extra time, I'll make it so that the user can sit any distance away, and the program is able to determine where the drums are in relation to the user.
+
+Going off of this, it would be nice if I could have variable volumes so that if the user hits a drum hard, it'll make a louder sound than if he hits it softly. This is also one of those "if-I-have-time-I'll-do-it" things.
+
+So, first I'm gonna worry about just getting one drum to work (I'll start with snare drum). And then I'll try to get different drums/cymbals, and go for volume variance and stuff later.
+
+
+12/5:
+
+Here are some notes that I wrote down as I made my project:
+
+Term project stuff
+
+- drum sticks two different colors
+     -and also maybe only look at certain space?
+-figure out pygame and sounds
+     - two sounds can play at same time
+     - variable sound
+- syncing. Thisll be a nice end feature
+
+-bass drum by movement detection?
+
+-make window smaller by resizing it to make it smoother
+
+Maybe I can make it so that you can pause the game and "move around the drums" so that you can put them where you want them to be. 
+
+Add the ability to have a song play in the background while you're drumming
+
+maybe add some sort of animation
+	-add picture animations
+	-or like a circle that expands where the hit occurred
+
+BE ABLE TO CLOSE PROGRAM
+
+
+-DIFFERENT VOLUMES
+-DISPLAY VELOCITY/DELTA ON VIDEO
+-MAKE PROGRAM RUN FASTER/SMOOTHER
+
+
+
+So basically, a lot of things that I wanted to do didn't make into the final cut. I did get some things, though, such as some sort of measuring of velocity and varying the volume. 
+
